@@ -1,0 +1,11 @@
+
+<h1 class="mt-5 mx-5">Add a task</h1>
+<div class="container mt-5">
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+</div>
